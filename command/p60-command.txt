@@ -1,0 +1,2 @@
+sudo cp /lib/systemd/system/bluetooth.service /lib/systemd/system/bluetooth.service.bak
+sudo sed -i 's|^ExecStart=/usr/lib/bluetooth/bluetoothd$|ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap|' /lib/systemd/system/bluetooth.service

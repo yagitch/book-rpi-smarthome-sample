@@ -1,0 +1,4 @@
+sudo apt install python-pexpect libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev python-pip
+sudo pip install bluepy
+git clone https://github.com/OpenWonderLabs/python-host.git
+cd python-host

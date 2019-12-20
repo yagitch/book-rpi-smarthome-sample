@@ -1,0 +1,1 @@
+curl -d "grant_type=password&client_id=[クライアントID]&client_secret=[クライアントシークレット]&username=[ユーザー名]&password=[パスワード]&scope=read_station" https://api.netatmo.net/oauth2/token

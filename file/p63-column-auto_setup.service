@@ -1,0 +1,12 @@
+[Unit]
+Description = AUTO Setup Script
+After=bluetooth.service sys-subsystem-bluetooth-devices-hci0.device suspend.target
+ConditionPathExists=/home/pi/auto
+
+[Service]
+ExecStart=/home/pi/auto/setup.sh
+Type=oneshot
+User=pi
+
+[Install]
+WantedBy=suspend.target
